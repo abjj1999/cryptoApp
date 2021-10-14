@@ -10,7 +10,7 @@ const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery(10);
     const globalstats = data?.data?.stats;
     if(isFetching) return 'loading...';
-    console.log(data);
+    
     return (
         <>
             <Title level= {2} className="heading"> CryptoBrian
